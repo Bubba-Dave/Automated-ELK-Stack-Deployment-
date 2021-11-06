@@ -22,7 +22,7 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly secure, in addition to restricting access to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box? Redundency, it helps against DDos attacks
+
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the server and system logs.
 -What does Filebeat watch for? Filebeat collects data about	the file system 
@@ -88,7 +88,7 @@ SSH into the control node and follow the steps below:
 - Update the config file to include correct IP adresses
 - Run the playbook, and navigate to kibana to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
+
 - _Which file is the playbook? Where do you copy it? the playbook is a yml file and it needs to be copied to the applications' folder
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? ELK conifig file is run on the elk stack server, then the filebeat install is run on the container level.
 - _Which URL do you navigate to in order to check that the ELK server is running? http:vmIP:5601/app/kibana
